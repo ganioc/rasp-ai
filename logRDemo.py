@@ -62,10 +62,10 @@ if __name__ == "__main__":
     y_values = -(parameters[0] + np.dot(parameters[1], x_values))/parameters[2]
 
     # Filter the applicants admitted
-    admitted = data.loc[y==1]
+    admitted = data.loc[y0==1]
 
     # Filter the applicants not admitted
-    not_admitted = data.loc[y == 0]
+    not_admitted = data.loc[y0 == 0]
 
     # Display the dataset plot
     ax = plt.scatter(admitted.iloc[:,0], admitted.iloc[:,1], s=10, label="Admitted")

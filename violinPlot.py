@@ -5,9 +5,9 @@ import seaborn as sns
 # Load the Iris dataset
 iris = sns.load_dataset("iris")
 
-# Generate the box plot
+# Generate the violin plot
 #ax = sns.boxplot(x="species", y = "sepal_length", data=iris)
-ax= sns.stripplot(x="species", y="sepal_length", data=iris, jitter=True, edgecolor="gray")
+sns.violinplot(x="species", y="sepal_length", data=iris, size=6)
 
 # Display the plot
 plt.show()
